@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="p2_vinayak"
+          type="multi_goal_nav.py"
+          name="multi_goal_nav"
+          output="screen"/>
+</launch>
