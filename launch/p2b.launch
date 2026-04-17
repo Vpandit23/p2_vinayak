@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="p2_vinayak"
+          type="red_ball_follower.py"
+          name="red_ball_follower"
+          output="screen"/>
+</launch>
