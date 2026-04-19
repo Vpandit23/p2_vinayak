@@ -51,9 +51,9 @@ class MultiGoalNavigator:
 
     def run(self):
         # Replace these with your actual map coordinates from the lab
-        L1 = (0.0, 0.0, 0.0)
-        L2 = (2.0, 0.0, 90.0)
-        L3 = (2.0, 2.0, 180.0)
+        L1 = (-10.135308594499461, -0.5479257261659881, 0.0)
+        L2 = (-6.0973277048370225,8.274313379723086, 0.0)
+        L3 = (2.5002578242259457,-1.2077249581975305, .0)
 
         goals = [
             ("L2", self.create_goal(*L2)),

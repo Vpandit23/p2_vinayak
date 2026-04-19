@@ -15,9 +15,9 @@ class RedBallFollower:
 
         self.bridge = CvBridge()
 
-        self.cmd_pub = rospy.Publisher('/cmd_vel', Twist, queue_size=10)
+        self.cmd_pub = rospy.Publisher('/mobile_base/commands/velocity', Twist, queue_size=10)
 
-        self.rgb_sub = rospy.Subscriber('/camera/rgb/image_raw', Image, self.rgb_callback)
+        self.rgb_sub = rospy.Subscriber('/usb_cam/image_raw', Image, self.rgb_callback)
         self.depth_sub = rospy.Subscriber('/camera/depth/image_raw', Image, self.depth_callback)
 
         self.latest_depth = None
